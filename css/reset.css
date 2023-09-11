@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*기존 tag의 css 기본값을 재지정*/
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  color: #333 !important;
+}
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+p {
+  margin: 0 !important;
+}

@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;200;500;700;900&display=swap");
+
+#wrap {
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.content {
+  max-width: 1400px;
+  margin: auto;
+}
+.form-select {
+  border: 0px solid #6c757d !important;
+  height: 50px;
+}
+body {
+  overflow: hidden;
+}
+body * {
+  touch-action: none;
+}
+/*header*/
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.3);
+  font-family: "Noto Sans", sans-serif;
+  z-index: 1;
+}
+.header .first_menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 30px;
+  z-index: 1;
+}
+.header .first_menu li a {
+  font-size: 30px;
+  font-weight: 600;
+}
+/*========header*/
+
+/*========visual*/
+
+.main > section {
+  min-height: 100vh;
+  overflow-y: hidden;
+  padding-top: 70px;
+}
+
+.visual_wrap {
+  height: 100vh;
+  overflow-y: hidden;
+}
+#video-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 비디오의 비율을 유지하면서 오버플로우를 숨김 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+video > source {
+  height: 100vh;
+  overflow-y: hidden;
+}
+.txt_wrap {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
+.txt {
+  max-width: 1400px;
+  display: block;
+  margin: auto !important;
+  font-size: 50px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 500;
+}
+/*========visual*/
+
+/*========nintro*/
+.intro {
+  font-size: 22px;
+}
+.intro > div {
+  height: calc(90vh / 3);
+  display: block;
+}
+.inner_div_wrap {
+  background-size: cover;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
+.business {
+  margin-top: 5vh;
+  background: url("../img/block.jpg") 50% 20% no-repeat;
+  background-size: cover;
+}
+.pr {
+  background: #141414 50% 50% no-repeat;
+  background-size: cover;
+}
+.career {
+  background: url("../img/block.jpg") 50% 80% no-repeat;
+  background-size: cover;
+}
+.inner_div {
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro_text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro_text > a {
+  position: absolute;
+  font-size: 16px;
+  color: #fff !important;
+  align-items: center;
+  bottom: 0px;
+}
+.view_more {
+  margin-bottom: 77px !important;
+  display: inline;
+}
+.intro_arrow {
+  position: relative;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #f47321;
+  border-radius: 30px;
+  margin-left: 25px;
+  display: inline-block;
+}
+.intro_arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 30%;
+  left: -10px;
+  width: 31px;
+  height: 11px;
+  background: url("../img/main_arr.png") no-repeat 50% 50%;
+  transition: transform 0.3s ease; /* Add transition to transform property */
+}
+.intro_arrow:hover::after {
+  transform: translateX(20px);
+}
+/*========intro*/
+
+.footer {
+  background: #ccc;
+  overflow: hidden;
+}
